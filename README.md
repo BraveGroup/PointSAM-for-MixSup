@@ -2,7 +2,7 @@
 
 ## MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection (ICLR 2024)
 
-[Yuxue Yang](https://yuxueyang1204.github.io/), [Lue Fan](https://lue.fan/)$^\dag$, [Zhaoxiang Zhang](https://zhaoxiangzhang.net)$^\dag$ ($^\dag$: Corresponding Authors)
+[Yuxue Yang](https://yuxueyang1204.github.io/), [Lue Fan](https://lue.fan/)†, [Zhaoxiang Zhang](https://zhaoxiangzhang.net)† (†: Corresponding Authors)
 
 ![Teaser Figure](assets/MixSup.png)
 > *A good detector needs massive semantic labels for difficult semantic learning but only a few accurate labels for geometry estimation.*
