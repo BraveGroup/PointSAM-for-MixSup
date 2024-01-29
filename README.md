@@ -5,16 +5,19 @@
 [Yuxue Yang](https://yuxueyang1204.github.io/), [Lue Fan](https://lue.fan/)†, [Zhaoxiang Zhang](https://zhaoxiangzhang.net)† (†: Corresponding Authors)
 
 ![Teaser Figure](assets/MixSup.png)
-> *A good detector needs massive semantic labels for difficult semantic learning but only a few accurate labels for geometry estimation.*
+> *A good LiDAR-based detector needs massive semantic labels for difficult semantic learning but only a few accurate labels for geometry estimation.*
 
-**MixSup** is a practical paradigm simultaneously utilizing massive cheap coarse labels and a limited number of accurate labels for **Mix**ed-grained **Sup**ervision. We validate its effectiveness in nuScenes, Waymo Open Dataset, and KITTI, employing various detectors. MixSup achieves up to 97.31% of fully supervised performance, using cheap cluster annotations and only 10% box annotations. Furthermore, we propose **PointSAM** based on the Segment Anything Model for automated coarse labeling, further reducing the annotation burden.
+- **MixSup** is a practical and universality paradigm for **Mix**ed-grained **Sup**ervision, simultaneously utilizing cheap coarse labels and limited accurate labels.
+- **MixSup** achieves up to 97.31% of fully supervised performance with cheap cluster-level labels and only 10% box-level labels, which has been validated in nuScenes, Waymo Open Dataset, and KITTI.
+- **MixSup** can seamlessly integrate with various 3D detectors, such as [SECOND](https://www.mdpi.com/1424-8220/18/10/3337), [CenterPoint](https://openaccess.thecvf.com/content/CVPR2021/papers/Yin_Center-Based_3D_Object_Detection_and_Tracking_CVPR_2021_paper.pdf), [PV-RCNN](https://openaccess.thecvf.com/content_CVPR_2020/papers/Shi_PV-RCNN_Point-Voxel_Feature_Set_Abstraction_for_3D_Object_Detection_CVPR_2020_paper.pdf), and [FSD](https://proceedings.neurips.cc/paper_files/paper/2022/hash/0247fa3c511bbc415c8b768ee7b32f9e-Abstract-Conference.html).
 
 <p float="left">
     <img src="assets/PointSAM.png", width="53%">
     <img src="assets/SAR.png", width="46%">
 </p>
 
-**PointSAM** is on par with the recent fully supervised panoptic segmentation models for *thing* classes on nuScenes **without any 3D annotations**.
+- **PointSAM** aims at automated coarse labeling based on Segment Anything Model, further reducing the annotation burden. 
+- **PointSAM** is on par with the recent fully supervised panoptic segmentation models for *thing* classes on nuScenes **without any 3D annotations**.
 
 ## Installation
 
@@ -103,6 +106,14 @@ Click the following links to download the model checkpoints and put them in the 
 |[Panoptic-PolarNet](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhou_Panoptic-PolarNet_Proposal-Free_LiDAR_Point_Cloud_Panoptic_Segmentation_CVPR_2021_paper.pdf) |      59.2       |      84.1       |      70.3       |
 |[SCAN](https://ojs.aaai.org/index.php/AAAI/article/view/20197) |      60.6       |      85.7       |      70.2       |
 |PointSAM (Ours) |      63.7       |      82.6       |      76.9       |
+
+### Qualitative Results
+
+| Sample Token | Segmentation | Ground Truth |
+| :----------: | :----------: | :----------: |
+|1ac0914c98b8488cb3521efeba354496| ![Qualitative Results](assets/pd_1ac0914c98b8488cb3521efeba354496.png) | ![Qualitative Results](assets/gt_1ac0914c98b8488cb3521efeba354496.png) |
+|fd8420396768425eabec9bdddf7e64b6| ![Qualitative Results](assets/pd_fd8420396768425eabec9bdddf7e64b6.png) | ![Qualitative Results](assets/gt_fd8420396768425eabec9bdddf7e64b6.png) |
+
 
 ## TODO
 
