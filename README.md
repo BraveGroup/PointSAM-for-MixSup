@@ -109,10 +109,10 @@ Click the following links to download the model checkpoints and put them in the 
 
 ### Qualitative Results
 
-| Sample Token | Segmentation | Ground Truth |
+| nuScenes Sample Token | 1ac0914c98b8488cb3521efeba354496 | fd8420396768425eabec9bdddf7e64b6 |
 | :----------: | :----------: | :----------: |
-|1ac0914c98b8488cb3521efeba354496| ![Qualitative Results](assets/pd_1ac0914c98b8488cb3521efeba354496.png) | ![Qualitative Results](assets/gt_1ac0914c98b8488cb3521efeba354496.png) |
-|fd8420396768425eabec9bdddf7e64b6| ![Qualitative Results](assets/pd_fd8420396768425eabec9bdddf7e64b6.png) | ![Qualitative Results](assets/gt_fd8420396768425eabec9bdddf7e64b6.png) |
+|Segmentation| ![Qualitative Results](assets/pd_1ac0914c98b8488cb3521efeba354496.png) | ![Qualitative Results](assets/pd_fd8420396768425eabec9bdddf7e64b6.png) |
+|Ground Truth| ![Qualitative Results](assets/gt_1ac0914c98b8488cb3521efeba354496.png) | ![Qualitative Results](assets/gt_fd8420396768425eabec9bdddf7e64b6.png) |
 
 
 ## TODO
