@@ -19,9 +19,9 @@
 </p>
 
 - **PointSAM** is a simple and effective method for MixSup to automatically segment cluster-level labels, further reducing the annotation burden.
-- **PointSAM** is on par with the recent fully supervised panoptic segmentation models for *thing* classes on nuScenes **without any 3D annotations**.
+- **PointSAM** is on par with the recent fully supervised panoptic segmentation models for *thing* classes on nuScenes **without any 3D annotations!**
 
-### :raising_hand: Talk is cheap, show me the samples !
+### :raising_hand: Talk is cheap, show me the samples!
 
 | nuScenes Sample Token | 1ac0914c98b8488cb3521efeba354496 | fd8420396768425eabec9bdddf7e64b6 |
 | :----------: | :----------: | :----------: |
@@ -125,10 +125,10 @@ Click the following links to download the model checkpoints and put them in the 
 Please consider citing our work as follows if it is helpful.
 
 ```
-@article{yang2024mixsup,
+@inproceedings{yang2024mixsup,
     title={MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection}, 
     author={Yang, Yuxue and Fan, Lue and Zhang, Zhaoxiang},
-    journal={arXiv:2401.16305},
+    booktitle={ICLR},
     year={2024},
 }
 ```
