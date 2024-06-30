@@ -99,7 +99,7 @@ bash run.sh
 bash run_dist.sh
 ```
 
-**Note**: 
+**Note**:
 1. The default setting for `run_dist.sh` is to use 8 GPUs. If you want to use less GPUs, please modify the `NUM_GPUS` argument in `run_dist.sh`.
 2. You can specify the `SAMPLE_INDICES` between `scripts/indices_train.npy` and `scripts/indices_val.npy` to run PointSAM on train or val split of nuScenes. The default setting is to segment the val split and evaluate the results on panoptic segmentation task.
 3. Before running the scripts, please make sure that you have at least 850MB of free space in the `OUT_DIR` folder for val split and 4GB for train split.
@@ -126,7 +126,7 @@ Please consider citing our work as follows if it is helpful.
 
 ```
 @inproceedings{yang2024mixsup,
-    title={MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection}, 
+    title={MixSup: Mixed-grained Supervision for Label-efficient LiDAR-based 3D Object Detection},
     author={Yang, Yuxue and Fan, Lue and Zhang, Zhaoxiang},
     booktitle={ICLR},
     year={2024},

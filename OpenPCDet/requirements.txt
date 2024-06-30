@@ -1,0 +1,15 @@
+numpy==1.19.5
+matplotlib==3.6
+pandas==1.4
+llvmlite
+numba==0.48.0
+torch>=1.1
+tensorboardX
+easydict
+pyyaml
+scikit-image==0.19
+tqdm
+torchvision
+SharedArray==3.1.0
+opencv-python
+pyquaternion
