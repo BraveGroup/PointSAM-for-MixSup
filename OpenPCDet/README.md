@@ -48,25 +48,25 @@ bash scripts/dist_train.sh 8 --cfg_file ${cfg_path} --extra_tag mixsup
 
 ### KITTI
 
-Performances on KITTI validation split with moderate difficulty. $\dagger$: Using coarse cluster labels and 10% accurate box labels.
+Performances on KITTI validation split with moderate difficulty. $^†$: Using coarse cluster labels and 10% accurate box labels.
 
 
 |  Detector | Car | Pedestrian | Cyclist | Log |
 | ----- | :-----: | :--------: | :-----: | :----: |
 | [SECOND](tools/cfgs/kitti_models/second.yaml) (100% frames)     | 78.62   | 52.98       | 67.15   | - |
-| [SECOND](tools/cfgs/kitti_models/second_mixed.yaml) (MixSup)$^\dagger$     | 74.85   | 50.18       | 61.46   | [log](https://drive.google.com/file/d/1cqabH0-Pt1Y4yQKpqpSGRuTOYtsLuNsf/view?usp=sharing) |
+| [SECOND](tools/cfgs/kitti_models/second_mixed.yaml) (MixSup) $^†$     | 74.85   | 50.18       | 61.46   | [log](https://drive.google.com/file/d/1cqabH0-Pt1Y4yQKpqpSGRuTOYtsLuNsf/view?usp=sharing) |
 | [PV-RCNN](tools/cfgs/kitti_models/pv_rcnn.yaml) (100% frames) | 83.61   | 57.90      | 70.47   | - |
-| [PV-RCNN](tools/cfgs/kitti_models/pv_rcnn_mixed.yaml) (MixSup)$^\dagger$ | 76.09   | 54.33      | 65.67   | [log](https://drive.google.com/file/d/13FWtPKBl4fH5hR_VOfIruqi9AMsf3cNN/view?usp=sharing) |
+| [PV-RCNN](tools/cfgs/kitti_models/pv_rcnn_mixed.yaml) (MixSup) $^†$ | 76.09   | 54.33      | 65.67   | [log](https://drive.google.com/file/d/13FWtPKBl4fH5hR_VOfIruqi9AMsf3cNN/view?usp=sharing) |
 
 ### NuScenes
 
-Performances on nuScenes validation split. $\dagger$: Using coarse cluster labels and 10% accurate box labels.
+Performances on nuScenes validation split. $^†$: Using coarse cluster labels and 10% accurate box labels.
 
 |  Detector | mAP | NDS | Log |
 | ----- | :-----: | :-----: | :----: |
 | [CenterPoint](tools/cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint.yaml) (100% frames)     | 62.41   | 68.20  | - |
 | CenterPoint (10% frames)     | 42.19   | 55.38  | - |
-| [CenterPoint](tools/cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint_mixed.yaml) (MixSup)$^\dagger$     | 60.73   | 66.46  | [log](https://drive.google.com/file/d/1cqabH0-Pt1Y4yQKpqpSGRuTOYtsLuNsf/view?usp=sharing) |
+| [CenterPoint](tools/cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint_mixed.yaml) (MixSup) $^†$     | 60.73   | 66.46  | [log](https://drive.google.com/file/d/1cqabH0-Pt1Y4yQKpqpSGRuTOYtsLuNsf/view?usp=sharing) |
 
 ## TODO
 
