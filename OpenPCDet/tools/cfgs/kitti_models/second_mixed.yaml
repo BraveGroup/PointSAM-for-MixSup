@@ -46,7 +46,7 @@ DATA_CONFIG:
           ONLY_KEEP_GT_BOX_SCENES: True
           CLUSTER_CENTER: cluster
           ROOT_PATH: ../data/kitti
-          GT_BOX_MASK_FILE: kitti_infos_train_10_percent_mask.pkl
+          GT_BOX_MASK_FILE: kitti_infos_train_valid_mask.pkl
 
         - NAME: transform_points_to_voxels
           VOXEL_SIZE: [0.05, 0.05, 0.1]
